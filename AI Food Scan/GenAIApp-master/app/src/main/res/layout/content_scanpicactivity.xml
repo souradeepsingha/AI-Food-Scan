@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".scanpicactivity"
+    android:background="#27251C"
+
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#27251C"
+    android:layout_marginTop="20dp"
+   android:layout_marginBottom="40dp"
+    android:padding="16dp">
+    <!--    <com.google.android.gms.ads.AdView-->
+    <!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:id="@+id/adView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_centerHorizontal="true"-->
+
+    <!--        ads:adSize="BANNER"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:layout_marginLeft="15dp"-->
+    <!--        android:layout_marginRight="15dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        ads:adUnitId="ca-app-pub-8292587411522870/7635795245">-->
+    <!--    </com.google.android.gms.ads.AdView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+
+            <LinearLayout
+                android:id="@+id/btnScan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+
+
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="2"
+                    app:cardBackgroundColor="#332F22"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+       android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    >
+
+
+
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+
+                    android:src="@drawable/baseline_camera_alt_24"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Scan Question"
+                    android:textColor="#E6E6E6"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+
+                    />
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#434343"
+
+
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+
+                   android:src="@drawable/empty2"
+                    android:scaleType="centerInside"/>
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:backgroundTint="#000000"
+            android:text="Upload Picture" />
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/editTextPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxbackground"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your prompt"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A17400"
+        android:textColor="#ffffff"
+        android:text="Get Answer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boxbackground"
+        android:padding="10dp"
+       android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tVResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"/>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/copybackground"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnCopy"
+        android:visibility="gone"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/baseline_content_copy_24"
+
+                />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/anim1"
+            app:lottie_loop="true"
+
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnCopy"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Copy"-->
+<!--        android:visibility="gone"/>-->
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#27251C"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:text="Write Question &amp; Get Answer"
+        android:textColor="#BFBFBF"
+        android:id="@+id/buddybottext"
+        android:layout_alignParentTop="true"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/star1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/buddybottext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:elevation="10dp"
+app:cardBackgroundColor="#332F22"
+
+
+        android:background="#ffffff"
+        app:cardCornerRadius="10dp">
+    <EditText
+        android:id="@+id/eTPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:padding="20dp"
+        android:hint="Write down your question here"
+        android:textSize="18dp"
+
+
+       android:background="#332F22"
+        android:textColor="#DADADA"
+
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:textColorHint="#B1B1B1"
+        android:shadowColor="#FFFFFF"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_below="@+id/buddybottext"
+          android:layout_marginBottom="10dp"
+
+
+        android:inputType="text"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Language"
+        android:textColor="#BFBFBF"
+        android:layout_below="@+id/star1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textSize="20dp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textlang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#332F22"
+        android:layout_marginBottom="0dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="#332F22"
+        app:cardCornerRadius="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:backgroundTint="#4D00C8"
+        android:textColor="#F3F3F3"
+    android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     android:layout_below="@+id/star"
+android:layout_marginBottom="10dp"
+        android:text="Generate Answer" />
+
+
+
+
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+
+<!--        ads:adSize="BANNER"-->
+<!--       android:layout_below="@+id/btnSubmit"-->
+<!--        ads:adUnitId="ca-app-pub-3940256099942544/9214589741">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

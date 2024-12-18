@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chatlayout">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity"
+
+
+        >
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/star1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            app:cardBackgroundColor="#7A4E4E4E"
+            android:background="#ffffff"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+
+
+                <EditText
+                    android:id="@+id/eTPrompt"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:hint="Enter your question here"
+                    android:textSize="18dp"
+
+
+                    android:background="@drawable/boxbackground"
+                    android:textColor="#FFFFFF"
+
+                    android:outlineAmbientShadowColor="#FFFFFF"
+                    android:textColorHint="#B1B1B1"
+                    android:shadowColor="#FFFFFF"
+                    android:outlineSpotShadowColor="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+
+                    android:inputType="text"/>
+
+                <ImageView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:text="Send"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imagviewmain"
+
+            android:scaleType="centerCrop"
+
+
+            />
+
+        <View
+            android:id="@+id/top_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+
+            />
+        <TextView
+            android:id="@+id/textlang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homework Type"
+            android:textColor="#4A4A4A"
+            android:layout_below="@+id/star1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textSize="20dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textlang"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="0dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:id="@+id/hmworktype"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="20dp"
+
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:outlineAmbientShadowColor="#ffffff"
+                    android:outlineSpotShadowColor="#ffffff"
+
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uplayout"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_image"
+
+                android:layout_marginTop="15dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FFFFFF"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:gravity="left"
+                    android:textStyle="bold"
+
+                    android:text="Jecika"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/buddybottext"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="left"
+                    android:id="@+id/hashtag"
+
+                    android:text="Personal Assistant"
+                    android:textColor="#FFFFFF"
+
+                    android:layout_alignParentTop="true"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Add this to res/layout/activity_main.xml -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tVResult"
+            android:visibility="gone"
+
+            />
+        <View
+            android:id="@+id/top_shadow2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/uplayout"
+            android:layout_above="@+id/star1"
+            android:padding="16dp" />
+        <TextView
+            android:id="@+id/tvhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/star1"
+            android:layout_marginRight="40dp"
+            android:text="Hello i am Jecika your persional Assistant! \nAsk anything ! "
+
+            android:textColor="#FFFFFF" />
+
+        <!--    <com.google.android.gms.ads.AdView-->
+        <!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+        <!--        android:id="@+id/adView"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_margin="10dp"-->
+        <!--        android:layout_centerHorizontal="true"-->
+
+        <!--        ads:adSize="BANNER"-->
+        <!--       android:layout_below="@+id/btnSubmit"-->
+        <!--        ads:adUnitId="ca-app-pub-8292587411522870/4579979382">-->
+        <!--    </com.google.android.gms.ads.AdView>-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity3"
+    android:background="#27251C"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#27251C"
+    android:padding="16dp">
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+
+<!--        ads:adSize="BANNER"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        ads:adUnitId="ca-app-pub-8292587411522870/7635795245">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               app:cardBackgroundColor="#332F22"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/btnScan"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+
+                    android:src="@drawable/baseline_camera_alt_24"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Scan Question"
+                    android:textColor="#CCCCCC"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+<!--        <Button-->
+<!--            android:id="@+id/btnScan"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:backgroundTint="#000000"-->
+<!--            android:text="Take Picture"-->
+<!--            android:layout_marginRight="10dp" />-->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#332F22"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_gravity="center"
+        android:padding="10dp"
+            android:id="@+id/btnUpload"
+            android:layout_weight="1"
+
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/upload2"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Question"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:textColor="#CCCCCC"
+                />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+<!--        <Button-->
+<!--            android:id="@+id/btnUpload"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:backgroundTint="#000000"-->
+<!--            android:text="Upload Picture" />-->
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:visibility="gone"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/boxbackground"
+        >
+        <EditText
+            android:id="@+id/editTextPrompt"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/boxbackground"
+            android:padding="15dp"
+            android:textColorHint="#CACACA"
+            android:layout_marginTop="10dp"
+            android:textColor="#E1E1E1"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your prompt"/>
+
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="match_parent"
+           android:src="@drawable/baseline_send_24"
+           android:id="@+id/btnSend"
+
+           />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/boxbackground"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/copybackground"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnCopy"
+            android:visibility="gone"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/baseline_content_copy_24"
+
+                />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tVResult"
+                    android:layout_width="wrap_content"
+                    android:textColor="#C6C6C6"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:lottie_autoPlay="true"
+
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/chat4"
+            app:lottie_loop="true"
+
+
+            />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
+
